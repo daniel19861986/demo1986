@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Penguin } from 'penguin_danielbarbu';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Using PenguinButton with the "penguin-prime" attribute */}
+        <Penguin styleType="penguin-prime">Prime Button</Penguin>
+
+        {/* Using PenguinButton with the "penguin-duo" attribute */}
+        <Penguin styleType="penguin-duo">Duo Button</Penguin>
+
+        {/* Add more buttons with different styleType props as needed */}
       </header>
     </div>
   );
 }
 
 export default App;
+
